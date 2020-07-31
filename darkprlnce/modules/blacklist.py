@@ -1,15 +1,15 @@
 import html
 import re
 
-import SaitamaRobot.modules.sql.blacklist_sql as sql
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import (connection_status,
+import darkprlnce.modules.sql.blacklist_sql as sql
+from darkprlnce import LOGGER, dispatcher
+from darkprlnce.modules.disable import DisableAbleCommandHandler
+from darkprlnce.modules.helper_funcs.chat_status import (connection_status,
                                                            user_admin,
                                                            user_not_admin)
-from SaitamaRobot.modules.helper_funcs.extraction import extract_text
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.helper_funcs.regex_helper import (infinite_loop_check,
+from darkprlnce.modules.helper_funcs.extraction import extract_text
+from darkprlnce.modules.helper_funcs.misc import split_message
+from darkprlnce.modules.helper_funcs.regex_helper import (infinite_loop_check,
                                                             regex_searcher)
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
